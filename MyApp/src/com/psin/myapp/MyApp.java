@@ -45,8 +45,8 @@ public class MyApp {
 				 currentAccount.setAccountName(f.getName());
 				 currentAccount.setCardNumber(100000L);
 			 }
-			 //currentAccountPersonsMap.put(f.getName(), Files.readAllBytes(f.toPath()));
-			 currentAccountPersonsMap.put(f.getName(), null);
+			 currentAccountPersonsMap.put(f.getName(), Files.readAllBytes(f.toPath()));
+			 //currentAccountPersonsMap.put(f.getName(), null);
 			 currentPersonCount++;
 			 if(currentPersonCount == MAX_PERSON_PER_ACCOUNT) {
 				 currentAccount.setPersonsMap(currentAccountPersonsMap);

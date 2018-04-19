@@ -38,7 +38,7 @@ public class Account implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "Account [accountName=" + accountName + ", cardNumber=" + cardNumber + ", personsMap=" + personsMap
+		return "Account [accountName=" + accountName + ", cardNumber=" + cardNumber + ", personsMap=" + personsMap.size()
 				+ "]";
 	}
 	
