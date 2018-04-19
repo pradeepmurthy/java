@@ -51,7 +51,7 @@ public class MyApp {
 			 if(currentPersonCount == MAX_PERSON_PER_ACCOUNT) {
 				 currentAccount.setPersonsMap(currentAccountPersonsMap);
 				 System.out.println("AccountName="+currentAccount.getAccountName() +", PersonSize="+currentAccount.getPersonsMap());
-				 DirectoryUtil.writeToFile(currentAccount.toString(), currentAccount.getAccountName(), JSON_DIR_ROOT_PATH);
+				 DirectoryUtil.writeToFile(currentAccount, currentAccount.getAccountName(), JSON_DIR_ROOT_PATH);
 				 currentPersonCount =0;
 			 }
 			//Update account object with 2 file records

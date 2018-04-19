@@ -4,8 +4,9 @@
 package com.psin.myapp.model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * @author psindhanur
@@ -41,5 +42,6 @@ public class Account implements Serializable {
 		return "Account [accountName=" + accountName + ", cardNumber=" + cardNumber + ", personsMap=" + personsMap.size()
 				+ "]";
 	}
+
 	
 }
